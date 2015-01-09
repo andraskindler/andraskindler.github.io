@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Android version distibution in 2014, visualized"
+title:  "Android version distribution in 2014, visualized"
 date:   2015-01-09 23:46:00
 categories: Android
 tags: Android distribution 2014
