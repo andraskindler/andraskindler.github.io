@@ -6,7 +6,7 @@ categories: Android
 tags: Android distribution 2014
 description: A visual story of the changes in Android version distribution in 2014.
 ---
-Google just updated the developer dashboard with the most recent [Android distribution numbers](http://developer.android.com/about/dashboards/index.html), measured during a 7-day period from the end of last year until the 5th of January. This is always an interesting read (not only for developers, but for Android-enthusiasts as well), and at the end of each year it is good to look back on what happened in 2014. Google releases these numbers every month, which I collected and I made into a chart to visualize last year's changes.
+Google just updated the developer dashboard with the most recent [Android distribution numbers](http://developer.android.com/about/dashboards/index.html), measured during a 7-day period from the end of last year until the 5th of January. This is always an interesting read (not only for developers, but for Android-enthusiasts as well), and at the end of each year it is good to look back on what happened in 2014. Google releases these numbers every month, which I collected and made into a chart to visualize last year's changes.
 <!-- more -->
 
 ### Android version distribution in 2014
