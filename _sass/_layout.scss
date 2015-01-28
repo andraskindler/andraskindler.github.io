@@ -115,9 +115,11 @@
 }
 
 .contact-list,
-.social-media-list {
+.social-media-list,
+.other-list {
     list-style: none;
     margin-left: 0;
+    margin-bottom: 0px;
 }
 
 .footer-col-wrapper {
@@ -129,7 +131,6 @@
 
 .footer-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
 }
 
@@ -147,7 +148,6 @@
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
     width:         calc(35% - (#{$spacing-unit} / 2));
     text-align: left;
-
 }
 
 @include media-query($on-laptop) {
