@@ -7,6 +7,7 @@ tags: JobScheduler, Lollipop, Service
 ---
 As a part of [Lollipop](https://developer.android.com/about/versions/android-5.0.html), Google introduced Project Volta, which emphasises on improving battery life. It contains a bunch of new APIs as well, focusing on measuring and reducing power consumption. One of these is the new [JobScheduler API](https://developer.android.com/reference/android/app/job/JobScheduler.html), which bundles tasks and defers them until certain conditions are met.
 <!-- more -->
+
 This also means that, unless a deadline is set (yes, it is possible to do so), the developer has no control over when the system will start the job, hence this depends on factors like plugging the charger or connecting to an unmetered network. Good examples include time-insensitive and power-hungry tasks, like creating a backup of photos, syncing a music playlist or caching a movie, or downloading and uploading non user-facing data. The conditions and parameters can be provided precisely, a few examples:
 
 * start a task when the phone is plugged in
