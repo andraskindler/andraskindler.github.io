@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using the JobScheduler API"
-date:   2015-01-01 15:15:00
+date:   2015-01-31 15:15:00
 categories: android
 tags: JobScheduler, Lollipop, Service
 ---
@@ -60,7 +60,7 @@ public class MyJobService extends JobService {
 This image (taken from a [DevBytes](https://www.youtube.com/watch?v=QdINLG5QrJc) video) sums it up pretty good:
 
 <p align="center">
-<img src="http://andraskindler.com/img/post/jobscheduler.jpg" alt="This is how the JobScheduler works">
+<img src="http://andraskindler.com/img/post/jobscheduler.png" alt="This is how the JobScheduler works">
 </p>
 
 ## Scheduling a Job
