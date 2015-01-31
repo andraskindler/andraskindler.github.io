@@ -5,7 +5,7 @@ date:   2013-08-16 09:30:00
 categories: Android development
 tags: DialogFragment
 redirect_from: "/2013/08/16/creating-a-fullscreen-dialogfragment-with-a-custom-background/"
-description: A post about how to create a fullscreen DialogFragment, with a custom bacnground.
+description: A post about how to create a fullscreen DialogFragment, with a custom background.
 ---
 The default Dialogs (or rather the [DialogFragments](http://developer.android.com/reference/android/app/DialogFragment.html)) look pretty good in Android since Honeycomb, but the default look-and-feel doesn't go well together with all app designs. Not to mention sometimes you need a fully different layout, a custom background color, or a semitransparent background with no grey dimming at all. We're talking about Android, where (almost) everything is possible, so there is a solution for this problem as well.
 <!-- more -->
@@ -17,7 +17,7 @@ Customizing a DialogFragment is a quite easy task. Create a class extending Dial
 *   _setBackgroundDrawable()_ - sets the dimming drawable. This can be transparent, a solid color, a gradient or a custom drawable (even an image)
 *   create the layout and set it to the dialog using _setContentView()_
 
-These four steps give you an empty fullscreen layout to play with, with the option to add a semi-transparent background, revealing the underlying activity. From this point, only your imagination is the limit; a good example of what can be achieved is the following screen, taken from an upcoming app: 
+These four steps give you an empty fullscreen layout to play with, with the option to add a semi-transparent background, revealing the underlying activity. From this point, only your imagination is the limit; a good example of what can be achieved is the following screen, taken from an upcoming app:
 
 <p  align="center">
     <img src="http://andraskindler.com/img/post/fullscreen_dialogfragment.png"/>
