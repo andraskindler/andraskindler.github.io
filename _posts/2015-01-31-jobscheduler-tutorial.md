@@ -28,7 +28,7 @@ The developer has to take care of two components: a service that wakes up when a
 </manifest>
 {% endhighlight %}
 
-The next step is to implement the JobService subclass. The service runs in bound mode, so there's no need to override the `onStartCommand()` function. The developer has to override two more methods, `onStartJob()` and `onStopJob()`.
+The next step is to implement the JobService subclass. The service runs in bound mode, so there's no need to override the `onStartCommand()` function, the developer has to override only two methods, `onStartJob()` and `onStopJob()`.
 
 Scheduled jobs will pop up in `onStartJob()`. Return true here if a separate thread is required, false otherwise. Each scheduled task is executed on a Handler running in the main thread, which blocks all future calls from the service. The solution is to only use the service to get notified when the conditions are met, and do the actual work on a separate thread. There's no need to acquire a [WakeLock](https://developer.android.com/training/scheduling/wakelock.html), JobScheduler keeps one while the service is running.
 
