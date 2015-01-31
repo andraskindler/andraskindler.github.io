@@ -28,9 +28,9 @@ The developer has to take care of two components: a service that wakes up when a
 </manifest>
 {% endhighlight %}
 
-The next step is to implement the JobService subclass. Like with a usual Service, the system will call the `onStartCommand()` function when the service is started. Make sure to return with `START_NOT_STICKY` - the OS will reinstantiate your service when needed, no need to force recreation. The developer has to override two more methods, `onStartJob()` and `onStopJob()`.
+The next step is to implement the JobService subclass. The service runs in bound mode, so there's no need to override the `onStartCommand()` function. The developer has to override two more methods, `onStartJob()` and `onStopJob()`.
 
-Scheduled jobs will pop up in `onStartJob()`. Return true here if a separate thread is required, false otherwise. Each scheduled task is executed on a Handler running in the main thread, which blocks all future calls from the service. The solution is to only use the service to get notified when the conditions are met, and do the actual work on a separate thread. For long-running tasks, acquire a [WakeLock](https://developer.android.com/training/scheduling/wakelock.html) and use your favourite threading solution (I mean [RxJava](http://andraskindler.com/blog/2013/using-rxjava-in-android/)).
+Scheduled jobs will pop up in `onStartJob()`. Return true here if a separate thread is required, false otherwise. Each scheduled task is executed on a Handler running in the main thread, which blocks all future calls from the service. The solution is to only use the service to get notified when the conditions are met, and do the actual work on a separate thread. There's no need to acquire a [WakeLock](https://developer.android.com/training/scheduling/wakelock.html), JobScheduler keeps one while the service is running.
 
 The system calls 'onStopJob()' if the current job has to be stopped before `jobFinished()` was called. This occurs when the requirements specified at schedule time are no longer met. For example, the task requires that the battery is charging, but the phone is no longer plugged in. Once this method is called, the system will release the wakelock. It is up to the developer to handle this situation besides stopping the job. Returning true notifies the JobManager that the task will be rescheduled, while returning false means the task is dropped.
 
@@ -40,10 +40,6 @@ This example does nothing but log if one of the methods are called.
 
 {% highlight java %}
 public class MyJobService extends JobService {
-
-  @Override public int onStartCommand(Intent intent, int flags, int startId) {
-    return START_NOT_STICKY;
-  }
 
   @Override public boolean onStartJob(JobParameters params) {
     Log.i(JobService.class.getName(), "onStartJob " + params.getJobId());
