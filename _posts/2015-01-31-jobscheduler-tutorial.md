@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using the JobScheduler API"
-date:   2014-12-24 14:35:20
+date:   2015-01-01 15:15:00
 categories: android
 tags: JobScheduler, Lollipop, Service
 ---
