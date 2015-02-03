@@ -17,7 +17,7 @@ A few minutes of debugging showed that the [onOffsetsChanged()](http://developer
 Since our app depends on motion, we needed to figure this out. Luckily, there is a best-effort solution (besides changing the launcher of course).
 
 <p align="center">
-  <img src="hpstr_live_wallpaper.gif" alt="HPSTR Live Wallpaper">
+  <img src="http://andraskindler.com/img/post/hpstr_live_wallpaper.gif" alt="HPSTR Live Wallpaper">
   <br/>
   this is how <a href="https://play.google.com/store/apps/details?id=com.hpstr.wllppr" target="blank_">HPSTR Live Wallpaper</a> looks
 </p>
