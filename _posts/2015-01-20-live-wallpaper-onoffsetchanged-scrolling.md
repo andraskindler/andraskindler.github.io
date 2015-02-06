@@ -5,6 +5,7 @@ date:   2015-02-03 17:00:00
 categories: android
 tags: Live Wallpaper onOffsetsChanged
 image: 2015-02-03-live-wallpaper-onoffsetchanged-scrolling.png
+description: Making sure live wallpapers respond properly to home screen scrolling, even when onOffsetsChanged() is not called correctly.
 ---
 This post is about ensuring that a live wallpaper app scrolls properly on all Android devices. This is huge issue on certain launchers, as they are not calling the onOffsetsChanged() function correctly, which notifies the wallpaper app that the home screen was scrolled. Luckily, there is a workaround.
 <!-- more -->
