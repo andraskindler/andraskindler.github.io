@@ -4,7 +4,7 @@ title:  "How to use and customize the DrawerLayout"
 date:   2013-06-15 08:00:00
 categories: Android development
 tags: DrawerLayout
-redirect_from: "http://andraskindler.com/2013/06/15/how-to-use-and-customize-the-drawerlayout/"
+redirect_from: "/2013/06/15/how-to-use-and-customize-the-drawerlayout/"
 description: Tutorial about using the DrawerLayout in Android apps.
 ---
 The DrawerLayout was introduced in the latest support library (revision 13), and has many similarities with the SlidingPaneLayout. It is used to add navigation capabilities and to display more information in the same activity, with just a swipe from the sides - a great way to add extra functionality without stuffing the screen with controls. Just tell the user the panels are there, otherwise no one will know about them.

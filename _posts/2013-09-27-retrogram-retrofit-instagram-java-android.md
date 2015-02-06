@@ -4,6 +4,7 @@ title:  retrogram - a lightweight Instagram connector for Java and Android
 date:   2013-09-27 11:00:00
 categories: android java
 tags: Instagram Retrogram Retrofit
+redirect_from: "/2013/09/27/retrogram-a-lightweight-instagram-connector-for-java-and-android/"
 ---
 Connecting to third party services is an everyday task for an app developer, not to mention connecting to social networks. Most of us have a long standing way of authenticating the user, acquiring data and performing tasks. A good way to do this on Android with Facebook, LinkedIn and Twitter is Spring's Social framework, which is sadly missing Instagram. This is why [Gyula Voros](https://twitter.com/gyula_voros), one of my teammates at [Ready](https://play.google.com/store/apps/details?id=com.ready.android)
 took his time and wrote a library, which he made available as an open source project on [GitHub](https://github.com/getinch/retrogram). The library is pretty lightweight, the only dependency is Square's [Retrofit](square.github.io/retrofit/), hence the name *retrogram*. This post will show you how to use said library in an Android application.
