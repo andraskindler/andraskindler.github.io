@@ -4,7 +4,7 @@ title:  "Using the JobScheduler API"
 date:   2015-01-31 15:15:00
 categories: android
 tags: JobScheduler, Lollipop, Service
-description: The JobScheduler API, introduced in Android 5.0 Lollipop, bundles tasks and defers them until certain conditions are met.
+description: This tutorial shows how to use the JobScheduler API, which waas introduced in Android 5.0 Lollipop, bundling tasks and defering them until certain conditions are met.
 ---
 As a part of [Lollipop](https://developer.android.com/about/versions/android-5.0.html), Google introduced Project Volta, which emphasises on improving battery life. It contains a bunch of new APIs as well, focusing on measuring and reducing power consumption. One of these is the new [JobScheduler API](https://developer.android.com/reference/android/app/job/JobScheduler.html), which bundles tasks and defers them until certain conditions are met.
 <!-- more -->
