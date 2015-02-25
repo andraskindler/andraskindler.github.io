@@ -37,7 +37,7 @@ If you're not that into Twitter, try Google Plus: most of the people listed abov
 YouTube is a great source of content about Android development, and about software development in general. Google's [Android Developers](https://www.youtube.com/channel/UCVHFbqXqoYvEWM1Ddxl0QDg) channel is a must-follow with the DevBytes series, and the recent Android Performance Patterns videos. [Google developers](https://www.youtube.com/user/GoogleDevelopers) and [Square Engineering](https://www.youtube.com/user/SquareEngineering) are  good additions to the list, both have some great talks about Android, although not solely featuring the mobile OS.
 
 ### Blogs and sites
-There are a lot of noteworthy blogs about Android development, like [Google's official blog](http://android-developers.blogspot.com), [Square's Corner](http://corner.squareup.com/), [Android UI/UX](androiduiux.com), [Dan Lew's blog](http://blog.danlew.net/), the [Square Island blog](http://blog.sqisland.com/), [Styling Android](https://blog.stylingandroid.com/) and [Grokking Android](http://www.grokkingandroid.com/), just to mention a few. You can follow them via RSS feeds or the authors' Twitter account, or simply by subscribing to [AndroidWeekly](androidweekly.net), a newsletter which delivers relevant articles to your mailbox on a weekly basis. You might want to check out the [androiddev](reddit.com/r/androiddev) subreddit from time to time, offering excellent posts and conversations.
+There are a lot of noteworthy blogs about Android development, like [Google's official blog](http://android-developers.blogspot.com), [Square's Corner](http://corner.squareup.com/), [Android UI/UX](androiduiux.com), [Dan Lew's blog](http://blog.danlew.net/), the [Square Island blog](http://blog.sqisland.com/), [Styling Android](https://blog.stylingandroid.com/) and [Grokking Android](http://www.grokkingandroid.com/), just to mention a few. You can follow them via RSS feeds or the authors' Twitter account, or simply by subscribing to [AndroidWeekly](androidweekly.net), a newsletter which delivers relevant articles to your mailbox on a weekly basis (also a good way of getting to know the latest libraries). You might want to check out the [androiddev](reddit.com/r/androiddev) subreddit from time to time, offering excellent posts and conversations.
 
 Read news sites frequently, it is important to stay updated with what's happening in the device/app segment as well. Also, seeing all those screenshots about manufacturer UI customisations will make you appreciate stock Android even more.
 
@@ -54,7 +54,7 @@ Developer conferences are a great place to learn about new technology, and to me
 ### Miscellaneous
 * Join the [Android developers Google group](https://groups.google.com/forum/#!forum/android-developers).
 * Follow [Android Development](https://plus.google.com/communities/105153134372062985968) and [Android Wear Developers](https://plus.google.com/communities/113381227473021565406) on Google Plus.
-* Check out the [Android Developers Backstage](http://androidbackstage.blogspot.com) podcast from time to time, hosted by Tor Norbye and Chet Haase
+* Check out the [Android Developers Backstage](http://androidbackstage.blogspot.com) podcast from time to time, hosted by Tor Norbye and Chet Haase.
 
 ### Takeaways
 The secret to be up to date is to not view it as an extra burden you have to do. Incorporate it into the daily routine: scroll through Twitter besides the morning tea, read blog posts while commuting, watch a YouTube-video instead of a TV show episode.
