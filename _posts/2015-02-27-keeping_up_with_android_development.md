@@ -27,7 +27,7 @@ Twitter is one of the most important channels in my opinion, it can help to stay
 * [Jake Wharton](https://twitter.com/JakeWharton) - Android Engineer at Square
 * [Cyril Mottier](https://twitter.com/cyrilmottier) - Lead Android software engineer at Capitaine Train & Google Developer Expert
 * [Dan Lew](https://twitter.com/danlew42) - Android developer at Trello
-* [Chris Lacy](https://twitter.com/chrismlacy) - developer of [Action Launcher](https://play.google.com/store/apps/details?id=com.actionlauncher.playstore) and * * [Link Bubble](https://play.google.com/store/apps/details?id=com.linkbubble.playstore)
+* [Chris Lacy](https://twitter.com/chrismlacy) - developer of [Action Launcher](https://play.google.com/store/apps/details?id=com.actionlauncher.playstore) and [Link Bubble](https://play.google.com/store/apps/details?id=com.linkbubble.playstore)
 
 If I left out anyone, let me know! Also, going through the *following* section of your Twitter account and unfollowing every inactive or too active account helps keep the noise to a minimum.
 
@@ -58,5 +58,3 @@ Developer conferences are a great place to learn about new technology, and to me
 
 ### Takeaways
 The secret to be up to date is to not view it as an extra burden you have to do. Incorporate it into the daily routine: scroll through Twitter besides the morning tea, read blog posts while commuting, watch a YouTube-video instead of a TV show episode.
-
-https://www.infinum.co/the-capsized-eight/articles/becoming-an-android-developer
