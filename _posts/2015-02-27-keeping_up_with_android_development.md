@@ -29,7 +29,7 @@ Twitter is one of the most important channels in my opinion, it can help to stay
 * [Dan Lew](https://twitter.com/danlew42) - Android developer at Trello
 * [Chris Lacy](https://twitter.com/chrismlacy) - developer of [Action Launcher](https://play.google.com/store/apps/details?id=com.actionlauncher.playstore) and [Link Bubble](https://play.google.com/store/apps/details?id=com.linkbubble.playstore)
 
-If I left out anyone, let me know! Also, going through the *following* section of your Twitter account and unfollowing every inactive or too active account helps keep the noise to a minimum.
+If I left out anyone, let me know! Also, going through the *following* section of your Twitter account every now and then, and unfollowing inactive or too active accounts helps keep the noise to a minimum.
 
 If you're not that into Twitter, try Google Plus: most of the people listed above are active there as well.
 
