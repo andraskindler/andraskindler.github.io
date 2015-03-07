@@ -55,6 +55,7 @@ Developer conferences are a great place to learn about new technology, and to me
 * Join the [Android developers Google group](https://groups.google.com/forum/#!forum/android-developers).
 * Follow [Android Development](https://plus.google.com/communities/105153134372062985968) and [Android Wear Developers](https://plus.google.com/communities/113381227473021565406) on Google Plus.
 * Check out the [Android Developers Backstage](http://androidbackstage.blogspot.com) podcast from time to time, hosted by Tor Norbye and Chet Haase.
+* Don't forget the bi-weekly [Fragmented](http://fragmentedpodcast.com/) podcast, hosted by Donn Felker and Kaushik Gopal.
 
 ### Takeaways
 The secret to be up to date is to not view it as an extra burden you have to do. Incorporate it into the daily routine: scroll through Twitter besides the morning tea, read blog posts while commuting, watch a YouTube-video instead of a TV show episode.
