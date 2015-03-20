@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Animating color-based View properties
+title:  Animating the colors of a View
 date:   2015-03-20 06:00:00
 categories: android
 tags: Android ObjectAnimator ValueAnimator ArgbEvaluator
