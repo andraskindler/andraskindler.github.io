@@ -4,7 +4,7 @@ title:  Animating color-based View properties
 date:   2015-03-20 06:00:00
 categories: android
 tags: Android ObjectAnimator ValueAnimator ArgbEvaluator
-image: animating_color_properties.gif
+image: animating_color_properties.jpg
 description: A tutorial about how to animate color parameters of Views using the ObjectAnimator, the ValueAnimator, and the ArgbEvaluator.
 ---
 If the UI of an app contains objects which change color according to some external effect (like the pressing of a button, or the changes in weather), the user experience can be highly improved when these changes are animated, not just switched instantly. This post illustrates how to fade the background, text color, or any color-based property of a View.
@@ -39,6 +39,10 @@ colorAnimator.start();
 {% endhighlight %}
 
 The work is done in the AnimatorUpdateListener, so there's room for more than one property and/or View. Also, this can be used to animate the color properties of some non-traditional UI elements, like the status bar and the navigation bar. And there's no reflection involved!
+
+<p align="center">
+<img src="http://andraskindler.com/img/post/fading_colors.gif" alt="animating the color properties of Views and the status bar">
+</p>
 
 ## Crossfading gradient colors
 Animating the colors of a [GradientDrawable](http://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html) is also possible with the technique detailed above, by calling the `setColors()` method in the listener with the proper colors.
