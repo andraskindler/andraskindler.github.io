@@ -41,7 +41,7 @@ colorAnimator.start();
 The work is done in the AnimatorUpdateListener, so there's room for more than one property and/or View. Also, this can be used to animate the color properties of some non-traditional UI elements, like the status bar and the navigation bar. And there's no reflection involved!
 
 <p align="center">
-<img src="http://andraskindler.com/img/post/fading_colors.gif" alt="animating the color properties of Views and the status bar">
+<img src="http://andraskindler.com/img/post/animating_color_properties.gif" alt="animating the color properties of Views and the status bar">
 </p>
 
 ## Crossfading gradient colors
