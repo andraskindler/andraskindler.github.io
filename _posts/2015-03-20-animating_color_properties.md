@@ -1,0 +1,54 @@
+---
+layout: post
+title:  Animating color-based View properties
+date:   2015-03-20 06:00:00
+categories: android
+tags: Android ObjectAnimator ValueAnimator ArgbEvaluator
+image: animating_color_properties.jpg
+description: A tutorial about how to animate color parameters of Views using the ObjectAnimator, the ValueAnimator, and the ArgbEvaluator.
+---
+If the UI of an app contains objects which change color according to some external effect (like the pressing of a button, or the changes in weather), the user experience can be highly improved when these changes are animated, not just switched instantly. This post illustrates how to fade the background, text color, or any color-based property of a View.
+<!-- more -->
+
+We're working on a huge update for [Ready Contact List](https://play.google.com/store/apps/details?id=com.ready.android), including a full material makeover. The app comes with basic theming options, meaning the prominent colors can be adjusted on-demand. We wanted to improve the user experience by crossfading between the new and old colors when the user changes something instead of just switching them. This post concludes what we are doing.
+
+<p align="center">
+<img src="http://andraskindler.com/img/post/fading_colors.gif" alt="animating the color properties of Views and the status bar">
+</p>
+
+## ObjectAnimator
+The easiest way of doing this is using an [ObjectAnimator](http://developer.android.com/reference/android/animation/ObjectAnimator.html). Since it can animate any property that has a setter, it can be used to animate certain colors of a view. The following piece of code fades the background color of a TextView from red to blue, in a single line.
+{% highlight java %}
+ObjectAnimator.ofInt(textView, "backgroundColor", Color.RED, Color.BLUE).start();
+{% endhighlight %}  
+
+Pretty straightforward, right? However, the ObjectAnimator has some usability and performance issues. One ObjectAnimator instance means only one animated property, multiple instances are necessary to animate different aspects of a view (or multiple views). Also, it uses a [reflection- or JNI-based mechanism](http://android-developers.blogspot.hu/2011/05/introducing-viewpropertyanimator.html) to turn the String property into a setter, for example the `setTextColor` parameter gets mapped to the `setTextColor()` function, causing quite the overhead. We can do better!
+
+## ValueAnimator plus ArgbEvaluator
+An other approach is to do things more manually, meaning a bit more code is required, but having more control over what's happening, and less performance-issues. The idea is that Android represents colors as integers holding 4 bytes of information, one for each component - alpha, red, blue and green. Fading between to colors stands for moving from the start color towards the end color, and on each tick, setting the color proportional to the time - this is exactly what a [ValueAnimator](http://developer.android.com/reference/android/animation/ValueAnimator.html) and an [ArgbEvaluator](http://developer.android.com/reference/android/animation/ArgbEvaluator.html) does, if used together.
+
+The ArgbEvaluator takes care of computing the proper color between the start and end values. It divides the start and end colors into individual values for the alpha, red, green and blue channels, then calculates the linearly interpolated result on each tick. The ArgbEvaluator is required because without it, the animator would treat the start and end values as integers instead of complex colors wrapped as integers, resulting in a lot flickering and unwanted colors.
+
+The following code illustrates how to crossfade the text color of a TextView from red to blue.
+
+{% highlight java %}
+final ValueAnimator colorAnimator = ValueAnimator.ofObject(new ArgbEvaluator(), Color.RED, Color.BLUE);
+colorAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+  @Override
+  public void onAnimationUpdate(ValueAnimator animator) {
+    textView.setTextColor((int) animator.getAnimatedValue());
+  }
+});
+colorAnimator.start();
+{% endhighlight %}
+
+The work is done in the AnimatorUpdateListener, so there's room for more than one property and/or View. Also, this can be used to animate the color properties of some non-traditional UI elements, like the status bar and the navigation bar. And there's no reflection involved!
+
+## Crossfading gradient colors
+Animating the colors of a [GradientDrawable](http://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html) is also possible with the technique detailed above, by calling the `setColors()` method in the listener with the proper colors.
+
+## TransitionDrawable
+The [TransitionDrawable](http://developer.android.com/reference/android/graphics/drawable/TransitionDrawable.html) can crossfade between two drawables, and while the ValueAnimator and ArgbEvaluator combo is a better fit for solid colors, this one can be used perfectly with bitmaps.
+
+## Takeaways
+If the colors of a layout change dynamically, animating these changes can do good to the user experience. The combination of the ValueAnimator and the ArgbEvaluator works great for fading colors of a View - I ended up using it as well. Also, if you're interested in trying out Ready 2.0, <a href="mailto:andraskindler@gmail.com" target="_top">shoot me a line</a>!
