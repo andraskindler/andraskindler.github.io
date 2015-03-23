@@ -44,6 +44,8 @@ The work is done in the AnimatorUpdateListener, so there's room for more than on
 <img src="http://andraskindler.com/img/post/animating_color_properties.gif" alt="animating the color properties of Views and the status bar">
 </p>
 
+Important: on Android versions less or equal to Jelly Bean (Android 4.1 or API level 16), a [bug](https://code.google.com/p/android/issues/detail?id=36158) is causing the ArgbEvaluator not to evaluate alpha value properly. If the alpha value is changing as well and API level <= 16 is supported as well, copying and using the [source code from AOSP](https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/animation/ArgbEvaluator.java) does the trick. Thanks to [kevin_teslacoilsw](http://www.reddit.com/r/androiddev/comments/2zp7uu/animating_the_colors_of_a_view/)!
+
 ## Crossfading gradient colors
 Animating the colors of a [GradientDrawable](http://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html) is also possible with the technique detailed above, by calling the `setColors()` method in the listener with the proper colors.
 
