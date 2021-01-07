@@ -19,6 +19,8 @@ name: Andras Kindler
 # Build settings
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-paginate
+  - webrick
