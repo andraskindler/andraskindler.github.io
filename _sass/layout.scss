@@ -1,0 +1,96 @@
+// body
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    line-height: 1.5;
+}
+
+// headings
+h1, h2 {
+    font-weight: 300;
+}
+
+// p tags
+p {
+    margin: 0;
+}
+
+// links
+a {
+    text-decoration: none;
+}
+
+// Set `margin-bottom` to maintain vertical rhythm
+h1, h2, p, blockquote, ul, li {
+    margin-bottom: 16px;
+}
+
+// site width
+.content {
+  max-width: 960px;
+  margin: auto;
+  flex: 1;
+}
+
+// Header
+.header {
+    padding: 24px 16px;
+    background-color: #607d8b;
+}
+
+.header-wrapper {
+  max-width: 960px;
+  margin: auto;
+}
+
+.header-title {
+    font-size: 34px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+// Footer
+.footer {
+    margin-top: 32px;
+    border-top: 1px solid #607d8b;
+    padding: 16px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+// Home
+
+.home-title {
+    margin-top: 16px;
+    font-size: 24px;
+}
+
+.post-list {
+    margin-left: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+        margin: 24px 0;
+    }
+}
+
+.post-excerpt {
+    font-size: 16px
+}
+
+// Post
+
+.post-deprecated-badge {
+    font-weight: bold;
+    background: #eceff1;
+    padding: 8px;
+}
