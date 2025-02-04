@@ -18,7 +18,7 @@ I originally started this site 10+ years ago, writing mostly about Android devel
             <h2>
       		    <a href="{{ post.url }}">{{ post.title }}</a>
             </h2>
-      		<p class="post-excerpt">{{ post.excerpt }} (<a href="{{ post.url }}">more</a>)</p>
+      		<p class="post-excerpt">{{ post.excerpt }} (<a href="{{ post.url }}">read the entire post</a>)</p>
 		</li>
         {% endif %}
     {% endfor %}
