@@ -12,6 +12,11 @@ h1, h2 {
     font-weight: 300;
 }
 
+.page-title {
+    margin-top: 16px;
+    font-size: 24px;
+}
+
 // p tags
 p {
     margin: 0;
@@ -63,11 +68,6 @@ h1, h2, p, blockquote, ul, li {
 }
 
 // Home
-
-.home-title {
-    margin-top: 16px;
-    font-size: 24px;
-}
 
 .post-list {
     margin-left: 0;
