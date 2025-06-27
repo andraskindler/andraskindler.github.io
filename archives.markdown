@@ -6,7 +6,7 @@ layout: default
 
 <ul class="post-list">
     {% for post in site.posts %}
-        {% if post.deprecated == true %}
+        {% if post.deprecated == true or post.main_page == false %}
       	<li>
             <h2>
       		    <a href="{{ post.url }}">{{ post.title }}</a>

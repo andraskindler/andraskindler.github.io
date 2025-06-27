@@ -6,6 +6,7 @@ categories:
 slug: calendar as todo list
 excerpt: Using the calendar as a todo list instead of only meetings is a simple concept, yet it is fundamentally different from a solely backlog-based approach.
 deprecated: false
+main_page: true
 ---
 An unwritten rule of entrepreneurship (and yes, life in general) is that there is always more things to take care of than there is time available. There are multiple strategies and tools to solve prioritisation, and doing this well plays an important role in success.
 

@@ -9,11 +9,11 @@ layout: default
 <p>
 I originally started this site 10+ years ago, writing mostly about Android development, and closed it down for a few years because of inactivity. Recently I started writing again, with a wider range of topics about my professional journey.</p>
 
-<p class="home-title">Posts:</p>
+<p class="home-title">Featured posts:</p>
 
 <ul class="post-list">
     {% for post in site.posts %}
-        {% if post.deprecated == false %}
+        {% if post.deprecated == false and post.main_page == true %}
       	<li>
             <h2>
       		    <a href="{{ post.url }}">{{ post.title }}</a>
@@ -24,4 +24,4 @@ I originally started this site 10+ years ago, writing mostly about Android devel
     {% endfor %}
 </ul>
 
-<p>You can find older posts in the <a href="/archives">archives</a>.</p>
+<p>You can find all posts in the <a href="/archives">archives</a>.</p>

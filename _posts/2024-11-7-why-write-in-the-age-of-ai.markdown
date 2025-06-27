@@ -6,6 +6,7 @@ categories:
 slug: why write in the age of ai content
 excerpt: With AI becoming increasingly available and widely adopted for generating text, writing for yourself and being good enough at it will become a competitive advantage.
 deprecated: false
+main_page: true
 ---
 AI is becoming highly available, and is taking the writing space by storm. LLMs are widely used to generate content everywhere: copywriting, blog posts, pSEO, social posts, you name it. It is indeed much easier to generate an article with AI in a few seconds, even with an unsophisticated prompt. For free! Why would anyone in their right mind write themself instead, which is a fundamentally difficult and tedious process?
 
