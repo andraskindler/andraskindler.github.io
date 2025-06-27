@@ -90,3 +90,15 @@ h1, h2, p, blockquote, ul, li {
     background: #eceff1;
     padding: 8px;
 }
+
+// blockquote
+blockquote {
+    background: #eceff1;
+    vertical-align: middle;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+
+    > p {
+        padding: 8px;
+    }
+}
