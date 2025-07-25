@@ -5,6 +5,7 @@ date:   2024-12-28
 categories: 
 slug: why write in the age of ai content
 excerpt: With AI becoming increasingly available and widely adopted for generating text, writing for yourself and being good enough at it will become a competitive advantage.
+og_image: /assets/images/og-why-write-in-the-age-of-ai.png
 deprecated: false
 main_page: true
 ---
