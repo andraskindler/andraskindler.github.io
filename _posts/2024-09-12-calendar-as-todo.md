@@ -5,7 +5,7 @@ date:   2024-09-12
 categories: 
 slug: calendar as todo list
 excerpt: Using the calendar as a todo list instead of only meetings is a simple concept, yet it is fundamentally different from a solely backlog-based approach.
-og_image: /assets/images/og-calendar-as-todo-list.png
+og_image: /assets/images/og/og-calendar-as-todo-list.png
 deprecated: false
 main_page: true
 ---
