@@ -11,7 +11,8 @@ layout: default
 <p>Besides Brew, I have the following side quests:</p>
 
 <ul>
-    <li>Building and growing <a href="https://followergrow.com" target="_blank">Followergrow</a>, an AI-powered iOS app helping with engagement and writing for X.</li>
-    <li>I try to dedicate time to my personal site. I got back into writing after a long time, and plan to publish a post every now and then. I also like to tinker around with the tech behind the site, and I enjoy how basic it is: a combination of Jekyll, CSS, and Markdown.</li>
-    <li>I'm working on leveling up my growth skillset, mainly interested in marketing, sales, and personal branding.</li>
+    <li><a href="https://followergrow.com" target="_blank">Followergrow</a>: an AI-powered iOS app helping with engagement and writing for X.</li>
+    <li><a href="https://www.liquidglassresources.com/" target="_blank">Liquid Glass Resources</a>: a collection of development and design resources about Liquid Glass UI.</li>
+    <li>I dedicate time to my personal site. I got back into writing after a long time, and plan to publish a post every now and then. I also like to tinker around with the tech behind the site, and I enjoy how basic it is: a combination of Jekyll, CSS, and Markdown.</li>
+    <li>I'm working on leveling up my growth skillset, mainly interested in marketing and personal branding.</li>
 </ul>
