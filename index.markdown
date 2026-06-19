@@ -25,3 +25,5 @@ I originally started this site 10+ years ago, writing mostly about Android devel
 </ul>
 
 <p>You can find all posts in the <a href="/archives">archives</a>.</p>
+
+{% include featured.html %}
